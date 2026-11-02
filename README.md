@@ -1,28 +1,30 @@
-# Студентски помощник 🎀
+# Student Helper 🎀
 
-Лично приложение „всичко в едно“ за студентското ежедневие: бюджет, разписание и срокове, списък за пазаруване и гардероб с предложения за тоалет. Работи на телефон и на компютър.
+**English** | [Български](README.bg.md)
 
-## Раздели
+A personal all-in-one app for everyday student life: budget, class schedule and deadlines, shopping list, and a wardrobe with outfit suggestions. Works on both phone and desktop. The interface is in Bulgarian.
 
-- **Днес** — часовете за деня, най-близките срокове, колко е похарчено този месец и предложение за тоалет според времето и дали има часове в университета.
-- **Бюджет** — бързо записване на разходи по категории (храна, транспорт, кафе, забавления, университет, дрехи, сметки), разбивка къде отиват парите, месечен лимит. Сумите са в евро.
-- **Уни** — седмично разписание на лекции и упражнения (зала, преподавател) и списък с изпити, протоколи и контролни с отброяване на дните.
-- **Пазар** — списък за пазаруване с отмятане; при „Приключих пазара“ сумата отива директно в бюджета.
-- **Гардероб** — дрехи със снимки, категории, сезон и стил; филтър „Забравени“ за дрехи, необличани от месец; **Комбинатор** за сглобяване и запазване на цели тоалети.
+## Sections
 
-## Технологии
+- **Today** — today's classes, the nearest deadlines, this month's spending, and an outfit suggestion based on the weather and on whether there are classes that day.
+- **Budget** — quick expense logging by category (food, transport, coffee, entertainment, university, clothes, bills), a breakdown of where the money goes, and a monthly limit. Amounts are in euros.
+- **Uni** — a weekly schedule of lectures and lab sessions (room, lecturer) and a list of exams, lab reports and tests with a countdown in days.
+- **Shopping** — a checklist for groceries; tapping “Done shopping” sends the total straight to the budget.
+- **Wardrobe** — clothes with photos, categories, season and style; a “Forgotten” filter for items not worn in a month; and an **Outfit builder** for putting together and saving complete outfits.
 
-- Един HTML файл с чист JavaScript и CSS, без външни библиотеки.
-- Шрифтове: Unbounded, Manrope, Caveat и JetBrains Mono от Google Fonts.
-- Светла и тъмна тема.
+## Tech
 
-## Съхранение на данните
+- A single HTML file with plain JavaScript and CSS, no external libraries.
+- Fonts: Unbounded, Manrope, Caveat and JetBrains Mono from Google Fonts.
+- Light and dark themes.
 
-В тази версия данните (и снимките) се пазят чрез вграденото хранилище на Claude Artifacts, в лична част, достъпна само за собственика. Затова, отворен извън Claude, `index.html` показва интерфейса, но не запазва промените.
+## Data storage
 
-## Планове
+In this version, data (including photos) is stored using Claude Artifacts' built-in storage, in a private space only the owner can access. Because of that, opening `index.html` outside of Claude shows the interface but does not save changes.
 
-- [ ] Самостоятелна версия със Supabase (база данни, вход с имейл, снимки) и Row Level Security, така че всеки потребител да вижда само своите данни
-- [ ] PWA: manifest, собствена иконка и service worker за инсталиране и работа без интернет
-- [ ] Публикуване чрез GitHub Pages
-- [ ] По желание: Android приложение
+## Roadmap
+
+- [ ] Standalone version with Supabase (database, email sign-in, photo storage) and Row Level Security, so each user can only access their own data
+- [ ] PWA: manifest, custom icon and service worker for installation and offline use
+- [ ] Hosting on GitHub Pages
+- [ ] Optional: Android app
